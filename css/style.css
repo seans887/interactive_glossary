@@ -1,0 +1,116 @@
+/*Element Styles*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, .height-100 {
+  height: 100%;
+  min-height: 100%;
+}
+
+p {
+  padding: 2% 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 5%;
+}
+
+/*Utility Classes*/
+
+.no-padding {
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Editor */
+
+#editor {
+  background-color: #000;
+  color: #4552FF;
+  font-family: monospace, consolas, sans-serif;
+  min-height: 100%;
+  padding-left: 2%;
+}
+
+.indent {
+  margin-left: 3%;
+}
+
+/* Syntax Highlighting */
+
+.comment {
+  color: #ccc;
+}
+
+.instance-variable {
+  color: #9F7EA7;
+}
+
+.keyword {
+  color: #ff1654;
+}
+
+.method-name {
+  color: #0dbeb2;
+}
+
+.operator {
+  color: #A5B570;
+}
+
+.parameters {
+  color: #ff860c;
+}
+
+.string {
+  color: #5CB570;
+}
+
+.highlight {
+  background-color: #fff;
+}
+
+/* Sidebar */
+
+#navigator {
+  height: 100%;
+  overflow: scroll;
+}
+
+.term {
+  margin: 5% 0;
+  position: relative;
+}
+
+.term-name {
+  padding: 5% 5% 5% ;
+}
+
+.term-name:hover {
+  background-color: #ffd9f5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Popup */
+
+#popup {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4%;
+  line-height: 1.4em;
+  padding: 20px;
+  position: fixed;
+  right: 30%;
+  top: 10%;
+  width: 30%;
+  z-index: 999;
+}

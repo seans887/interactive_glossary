@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Classes & Objects</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/foundation.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="initial-scale=1">
+    <script src="./js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="height-100">
+      <div class="large-9 columns height-100 no-padding">
+        <div id="editor" class="row">
+          <div class="large-11 columns">
+            <div class="js-class">
+              <span class="keyword">class</span> Dog
+
+              <div class="indent js-defining-method">
+                <span class="keyword">def</span> <span class="method-name">initialize</span>(<span class="parameters js-parameter">name</span>, <span class="parameters js-parameter">breed</span>, <span class="parameters js-parameter">age</span>)
+                <div class="indent"><span class="instance-variable js-instance-variable">@name</span> <span class="operator">=</span> name</div>
+                <div class="indent"><span class="instance-variable js-instance-variable">@breed</span> <span class="operator">=</span> breed</div>
+                <div class="indent"><span class="instance-variable js-instance-variable">@age</span> <span class="operator">=</span> age</div>
+                <div class="keyword">end</div>
+              </div>
+
+              <div class="indent js-defining-method js-getter-method">
+                <span class="keyword">def</span> <span class="method-name">age</span>
+                <div class="indent"><span class="instance-variable js-instance-variable">@age</span></div>
+                <div class="keyword">end</div>
+              </div>
+
+              <div class="indent js-defining-method js-setter-method">
+                <span class="keyword">def</span> <span class="method-name">age=</span>(<span class="parameters js-parameter">age</span>)
+                <div class="indent"><span class="instance-variable js-instance-variable">@age</span> <span class="operator">=</span> age</div>
+                <div class="keyword">end</div>
+              </div>
+
+              <div class="indent js-defining-method">
+                <span class="keyword">def</span> <span class="method-name">bark</span>
+                <div class="indent"><span class="string">"RUFF RUFF"</span></div>
+                <div class="keyword">end</div>
+              </div>
+
+              <div class="keyword">end</div>
+            </div>
+
+            <div>
+              <span class="js-instance">spot</span> = Dog<span class="keyword">.new</span>(<span class="string js-argument">"Spot"</span>, <span class="string js-argument">"Corgi"</span>, <span class="string js-argument">"3"</span>)
+            </div>
+
+            <div>
+              puts <span class="js-instance">spot</span>.bark
+            </div>
+
+            <div class="comment">
+              => "RUFF RUFF"
+            </div>
+
+            <div>
+              <span class="js-instance">spot</span>.age <span class="operator">=</span> 4
+            </div>
+
+            <div>
+              puts <span class="js-instance">spot</span>.age
+            </div>
+
+            <div class="comment">
+              => 4
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="navigator" class="large-3 columns no-padding">
+        <ul>
+          <li class="term" data-term="class">
+            <h6 class="term-name">Classes</h6>
+            <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+
+            <ul>
+              <li class="term" data-term="instance-variable">
+                <h6 class="term-name">Instance Variables</h6>
+                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+              </li>
+            </ul>
+          </li>
+          <li class="term" data-term="instance">
+            <h6 class="term-name">Instances</h6>
+            <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+          </li>
+          <li class="term">
+            <h6 class="term-name">Methods</h6>
+            <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+            <ul>
+              <li class="term" data-term="defining-method">
+                <h6 class="term-name">Defining a Method</h6>
+                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+                <ul>
+                  <li class="term" data-term="parameter">
+                    <h6 class="term-name">Parameters</h6>
+                    <div class="description hidden">
+                      <p>A <strong>parameter</strong> is a variable input that can be used within a <strong>method</strong>. When we define a method, we also define any parameters that the method will accept - however, we have to use placeholder values to refer to these inputs, since we don't yet know their literal values.</p>
+                      <p>Later, when we <strong>invoke</strong> the method, we will pass in <strong>arguments</strong>, which hold actual data, to replace the placeholder parameters.</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="term" data-term="invoking-method">
+                <h6 class="term-name">Invoking a Method</h6>
+                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+                <ul>
+                  <li class="term" data-term="argument">
+                    <h6 class="term-name">Arguments</h6>
+                    <div class="description hidden">
+                      <p>A <strong>parameter</strong> is a variable input that can be used within a <strong>method</strong>. When we define a method, we also define any parameters that the method will accept - however, we have to use placeholder values to refer to these inputs, since we don't yet know their literal values.</p>
+                      <p>Later, when we <strong>invoke</strong> the method, we will pass in <strong>arguments</strong>, which hold actual data, to replace the placeholder parameters.</p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="term" data-term="getter-method">
+                <h6 class="term-name">Getter Methods</h6>
+                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+              </li>
+              <li class="term" data-term="setter-method">
+                <h6 class="term-name">Setter Methods</h6>
+                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="popup" class="hidden">
+
+    </div>
+
+    <script src="./js/vendor/jquery.js"></script>
+    <script src="./js/foundation.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(document).foundation();
+
+
+        $("#navigator .term-name").hover(function() {
+          var term = $(this).parent().data("term");
+          $(".js-"+term).addClass("highlight");
+          $("#popup").html( $(this).siblings(".description").html() ).removeClass("hidden");
+        }, function() {
+          var term = $(this).parent().data("term");
+          $(".js-"+term).removeClass("highlight");
+          $("#popup").addClass("hidden");
+        });
+
+      });
+    </script>
+  </body>
+</html>
