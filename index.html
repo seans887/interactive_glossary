@@ -16,7 +16,7 @@
             <div class="js-class">
               <span class="keyword">class</span> Dog
 
-              <div class="indent js-defining-method">
+              <div class="indent js-defining-method js-constructor">
                 <span class="keyword">def</span> <span class="method-name">initialize</span>(<span class="parameters js-parameter">name</span>, <span class="parameters js-parameter">breed</span>, <span class="parameters js-parameter">age</span>)
                 <div class="indent"><span class="instance-variable js-instance-variable">@name</span> <span class="operator">=</span> name</div>
                 <div class="indent"><span class="instance-variable js-instance-variable">@breed</span> <span class="operator">=</span> breed</div>
@@ -50,7 +50,7 @@
             </div>
 
             <div>
-              puts <span class="js-instance">spot</span>.bark
+              puts <span class="js-instance">spot</span><span class="js-invoking-method invoking method">.bark</span>
             </div>
 
             <div class="comment">
@@ -75,26 +75,30 @@
         <ul>
           <li class="term" data-term="class">
             <h6 class="term-name">Classes</h6>
-            <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+            <p class="description hidden">A <strong>class</strong> is a set of instructions (a blueprint) for building an object. As a class, I can inherit abilities from another class. A class is just an Object.</p>
 
             <ul>
+              <li class="term" data-term="constructor">
+                <h6 class="term-name">Constructor</h6>
+                <p class="description hidden">Each class may have a <strong>constructor</strong>. That constructor's method name is a reserved word in Ruby called <code>initialize</code>. This constructor can expect arguments passed into the <code>.new()</code> method. Upon initialization of the Class, the constructor is immediately invoked and any code inside of this method is ran.</p>
+              </li>
               <li class="term" data-term="instance-variable">
                 <h6 class="term-name">Instance Variables</h6>
-                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+                <p class="description hidden">An <strong>instance variable</strong> is just a variable assigned to whatever new object created based on each new class. Instance variables are preceded with <code>@</code>.</p>
               </li>
             </ul>
           </li>
           <li class="term" data-term="instance">
             <h6 class="term-name">Instances</h6>
-            <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+            <p class="description hidden"><strong>Instances</strong> are individual objects created from the <em>blueprint</em> that our Class definition lays out. There are many dogs, but every dog comes from a similar genetic blueprint. In this example, each new dog is a new instance of the Dog class.</p>
           </li>
           <li class="term">
             <h6 class="term-name">Methods</h6>
-            <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+            <p class="description hidden">Methods are functions that are owned by an object. Since everything in Ruby is an object, all functions are methods.</p>
             <ul>
               <li class="term" data-term="defining-method">
                 <h6 class="term-name">Defining a Method</h6>
-                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+                <p class="description hidden">We define methods starting with <code>def</code> plus the assigned name and then end with with <code>end</code></p>
                 <ul>
                   <li class="term" data-term="parameter">
                     <h6 class="term-name">Parameters</h6>
@@ -106,13 +110,13 @@
                 </ul>
               </li>
               <li class="term" data-term="invoking-method">
-                <h6 class="term-name">Invoking a Method</h6>
-                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+                <h6 class="term-name">Invoking Method</h6>
+                <p class="description hidden">We invoke a method using dot notation.</p>
                 <ul>
                   <li class="term" data-term="argument">
                     <h6 class="term-name">Arguments</h6>
                     <div class="description hidden">
-                      <p>A <strong>parameter</strong> is a variable input that can be used within a <strong>method</strong>. When we define a method, we also define any parameters that the method will accept - however, we have to use placeholder values to refer to these inputs, since we don't yet know their literal values.</p>
+                      <p>A <strong>parameter/argument</strong> is a variable input that can be used within a <strong>method</strong>. When we define a method, we also define any parameters that the method will accept - however, we have to use placeholder values to refer to these inputs, since we don't yet know their literal values.</p>
                       <p>Later, when we <strong>invoke</strong> the method, we will pass in <strong>arguments</strong>, which hold actual data, to replace the placeholder parameters.</p>
                     </div>
                   </li>
@@ -120,11 +124,11 @@
               </li>
               <li class="term" data-term="getter-method">
                 <h6 class="term-name">Getter Methods</h6>
-                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+                <p class="description hidden">To get data in our classes' variables, we need to create <strong>getter</strong>. This allows us to directly access the data contained in a variable inside of our Class.</p>
               </li>
               <li class="term" data-term="setter-method">
                 <h6 class="term-name">Setter Methods</h6>
-                <p class="description hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quisquam numquam facilis explicabo dolores facere magni molestiae nulla consectetur, optio nam impedit natus, corrupti dicta animi beatae ex aperiam reprehenderit.</p>
+                <p class="description hidden">Set data in our instance variables, we need to create <strong>setter method</strong>. This allows us to set a value to a variable owned by a class. <em>Mutator</em> is another word for setter.</p>
               </li>
             </ul>
           </li>
